@@ -19,9 +19,8 @@ const app = express();
 
 
 // 🔥 ENV VARIABLES
-const PORT = 3000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://cafe:cafe@cafe.oeycrp8.mongodb.net/';
-
+const PORT = process.env.PORT || 3000;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 // 🔥 MIDDLEWARE
 app.use(cors());
